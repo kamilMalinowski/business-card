@@ -9,7 +9,7 @@ html {
 }
 /*body*/
 .body {
-  background-image: url("/images/dwa_kolory.png");
+  background-image: url('/images/kamilek_bg.jpg');
   background-repeat: repeat-x;
   background-position: center center;
   background-size: contain;
