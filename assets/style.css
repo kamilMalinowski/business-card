@@ -7,9 +7,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 /*body*/
 .body {
-  background-image: url('/images/kamilek_bg.jpg');
+  background-image: url('/kamilek_bg.jpg');
   background-size: cover;
   background-position: center center;
   background-color: black;
