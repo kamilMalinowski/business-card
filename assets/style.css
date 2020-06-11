@@ -35,6 +35,7 @@ html {
 .card {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .card__image,
 .card__link--img {
@@ -43,6 +44,7 @@ html {
   border-radius: 148px;
   height: 148px;
   transition-duration: 0.25s;
+  margin-bottom: 50px;
 }
 .card__image:hover {
   transform: scale(1.05);
@@ -71,5 +73,47 @@ html {
 .special {
   color: #f59549;
   font-weight: normal;
+}
+
+@media screen and (max-width: 1010px) {
+  .card__title {
+    font-size: 24px;
+  }
+  .card__description {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .card__title {
+    font-size: 24px;
+  }
+  .card__description {
+    font-size: 12px;
+  }
+  .main {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .card__title {
+    font-size: 16px;
+  }
+  .card__description {
+    font-size: 8px;
+  }
+  .card__image,
+  .card__link--img {
+    margin-right: 10px;
+    width: 120px;
+    height: 120px;
+  }
+  .card__description--p {
+    padding-bottom: 6px;
+  }
+  .main {
+    margin: 10px;
+    padding: 15px;
+  }
 }
 /*color i use #f59549-orange #191c21-dark*/
