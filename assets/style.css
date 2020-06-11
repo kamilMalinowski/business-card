@@ -10,7 +10,7 @@ html {
 /*body*/
 .body {
   background-image: url('/images/kamilek_bg.jpg');
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-position: center center;
   background-size: contain;
   font-family: "Miriam Libre", sans-serif;
