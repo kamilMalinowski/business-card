@@ -12,7 +12,7 @@ html {
 .body {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/6e4290101942177.5f2affeb2f73d.png");
   background-size: contain;
-  background-position: center center;
+  background-position: center;
   background-color: black;
   font-family: "Miriam Libre", sans-serif;
   color: #191c21;
