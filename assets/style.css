@@ -115,9 +115,10 @@ html {
 .picture-link__image {
   width: 148px;
   height: 148px;
+  z-index: 9999;
   transition-duration: 0.25s;
-
 }
+
 .picture-link__image:hover {
   transform: scale(1.05);
   transition-duration: 0.25s;
