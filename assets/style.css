@@ -48,21 +48,35 @@ html {
   transition: All 0.25s ease-in-out;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  content: "pl";
+}
+.language__pl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgb(196, 85, 85);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0;
+  transition: All 0.25s ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .language__pl:hover {
   width: 58px;
   transition: All 0.25s ease-in-out;
-  color: white;
-  background: #395181;
+  color: rgb(0, 0, 0);
+  background: rgb(207, 117, 117);
 }
 .language__en:hover {
   width: 58px;
   transition: All 0.25s ease-in-out;
   color: white;
   background: #395181;
-  content: "pl";
 }
 
 /* ----------MAIN---------- */
@@ -86,10 +100,8 @@ html {
 /*my header*/
 .header {
   color: #96955d;
-
   text-shadow: -1px -1px 1px rgba(10, 9, 9, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   background: #272727;
-
   height: 100px;
   width: 480px;
   border-bottom: 4px solid #96955d;
@@ -250,13 +262,15 @@ html {
     height: 260px;
   }
   .onTheWeb__link,
-  .language__en {
+  .language__en,
+  .language__pl {
     font-weight: normal;
     width: 20px;
     height: 20px;
     font-size: 10px;
   }
   .language__en:hover,
+  .language__pl:hover,
   .onTheWeb__link--gh:hover,
   .onTheWeb__link--be:hover,
   .onTheWeb__link--fb:hover,
