@@ -58,7 +58,6 @@ html {
   background: #395181;
 }
 .language__en:hover {
-
   width: 58px;
   transition: All 0.25s ease-in-out;
   color: white;
@@ -76,7 +75,6 @@ html {
 /*article*/
 .article {
   width: 480px;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +195,74 @@ html {
 }
 
 /* ----------MEDIA---------- */
-/*mediaqueries*/
-@media screen and (max-width: 1010px) {
+/*mediaqueries-600px*/
+@media screen and (max-width: 600px) {
+  .mypicture {
+    width: 320px;
+    height: 320px;
+  }
+  .header__title {
+    font-size: 26px;
+  }
+  .about-me {
+    font-size: 14px;
+    width: 320px;
+  }
+  .header {
+    width: 320px;
+  }
+  .article {
+    width: 320px;
+  }
+  .header__description {
+    font-size: 14px;
+  }
+}
+/*mediaqueries-435px*/
+@media screen and (max-width: 435px) {
+  .mypicture {
+    width: 260px;
+    height: 260px;
+  }
+  .header {
+    height: 50px;
+    border-top-right-radius: 0;
+  }
+  .header__title {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+  .about-me {
+    font-size: 8px;
+    width: 260px;
+    height: 50px;
+    border-bottom-right-radius: 0;
+    padding: 6px;
+  }
+  .header {
+    width: 260px;
+  }
+  .article {
+    width: 260px;
+  }
+  .header__description {
+    font-size: 10px;
+  }
+  .onTheWeb {
+    height: 260px;
+  }
+  .onTheWeb__link,
+  .language__en {
+    font-weight: normal;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .language__en:hover,
+  .onTheWeb__link--gh:hover,
+  .onTheWeb__link--be:hover,
+  .onTheWeb__link--fb:hover,
+  .onTheWeb__link--yt:hover {
+    width: 22px;
+  }
 }
