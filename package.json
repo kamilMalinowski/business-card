@@ -1,0 +1,24 @@
+{
+  "name": "business-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass -w assets/style.scss assets/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilMalinowski/business-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilMalinowski/business-card/issues"
+  },
+  "homepage": "https://github.com/kamilMalinowski/business-card#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
