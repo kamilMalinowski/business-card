@@ -8,6 +8,8 @@ Hi, this is my  business card created  as part of the "WTF: Co ten frontend" tra
 
 - HTML + CSS + JS
 - NODE-SASS
+- animation
+- Flexbox
 
 ## AVAILABLE SCRIPTS
 
