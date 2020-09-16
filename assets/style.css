@@ -9,7 +9,7 @@ html {
 
 /*body*/
 .body {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/99de61101942177.5f2c4c0fc8bcc.png");
+  background-image: url("../images/kamil-bg.png");
   background-size: cover;
   background-position: center;
   background-color: black;
@@ -155,13 +155,13 @@ html {
 /*animation*/
 @keyframes picture {
   from {
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/af0a9f101942177.5f2fc8f5d90ce.png"); }
+    background-image: url("../images/kamil-bc1.png"); }
   to {
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/06abf8101942177.5f2fe2ccca3d0.png"); } }
+    background-image: url("../images/kamil-bc2.png"); } }
 
 /*my picture*/
 .mypicture {
-  animation: picture 2s cubic-bezier(0.76, 0.06, 1, 2) infinite alternate;
+  animation: picture 4s linear infinite alternate;
   background-size: contain;
   width: 480px;
   height: 480px;
