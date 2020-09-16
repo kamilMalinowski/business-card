@@ -165,18 +165,19 @@ html {
 }
 
 /*animation*/
-@keyframes picture {
-  from {
-    background-image: url("../images/kamil-bc1.png");
-  }
-  to {
-    background-image: url("../images/kamil-bc2.png");
-  }
-}
+// @keyframes picture {
+//   from {
+//     background-image: url("../images/kamil-bc1.png");
+//   }
+//   to {
+//     background-image: url("../images/kamil-bc2.png");
+//   }
+// }
+//UPDATE COMMING SOON !!!!!!!!!
 
 /*my picture*/
-.mypicture {
-  animation: picture 4s linear infinite alternate;
+.myPicture {
+  // animation: picture 4s linear infinite alternate;
   background-size: contain;
   width: 480px;
   height: 480px;
@@ -289,5 +290,15 @@ html {
         width: 22px;
       }
     }
+    &--in:hover {
+      width: 58px;
+      transition: All 0.25s ease-in-out;
+      color: white;
+      background: #0077b5;
+      @media screen and (max-width: 435px) {
+        width: 22px;
+      }
+    }
   }
 }
+
