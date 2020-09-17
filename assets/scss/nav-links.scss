@@ -4,18 +4,30 @@
   align-items: center;
   justify-content: center;
 }
+@mixin before {
+  animation: stretch 0.25s ease-in-out;
+  position: absolute;
+  font-size: 18px;
+  left: -100px;
+  font-style: italic;
+  background: #96955d;
+  width: 100px;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
 /*nav-links*/
 .nav-links {
   margin: 0;
-
-  font-size: 20px;
-  @media screen and (max-width: 435px) {
-    height: 260px;
-  }
+  padding: 0;
+  //   @media screen and (max-width: 435px) {
+  //     height: 260px;
+  //   }
   &__item {
     list-style: none;
   }
   &__link {
+    font-size: 20px;
     font-weight: bold;
     @include flex;
     color: black;
@@ -25,70 +37,108 @@
     height: 50px;
     text-align: center;
     margin: 0;
-    transition: All 0.25s ease-in-out;
+    padding: 0;
+    transition: width 0.25s ease-in-out;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    @media screen and (max-width: 435px) {
-      font-weight: normal;
-      width: 20px;
-      height: 20px;
-      font-size: 10px;
-    }
+    // @media screen and (max-width: 435px) {
+    //   font-weight: normal;
+    //   width: 30px;
+    //   height: 30px;
+    //   font-size: 10px;
+    // }
     &--gh:hover {
+      position: relative;
       width: 58px;
-      transition: All 0.25s ease-in-out;
       color: white;
       background: #252a2f;
-      @media screen and (max-width: 435px) {
-        width: 22px;
+      &::before {
+        @include before;
+        @include flex;
+        content: "GitHub";
       }
+      //   @media screen and (max-width: 435px) {
+      //     width: 22px;
+      //   }
     }
     &--be:hover {
+      position: relative;
       width: 58px;
-      transition: All 0.25s ease-in-out;
       color: white;
       background: #0057ff;
-      @media screen and (max-width: 435px) {
-        width: 22px;
+      &::before {
+        @include before;
+        @include flex;
+        content: "Behance";
       }
+      //   @media screen and (max-width: 435px) {
+      //     width: 22px;
+      //   }
     }
     &--fb:hover {
+      position: relative;
       width: 58px;
-      transition: All 0.25s ease-in-out;
       color: white;
       background: #3b5894;
-      @media screen and (max-width: 435px) {
-        width: 22px;
+      &::before {
+        @include before;
+        @include flex;
+        content: "Facebook";
       }
+      //   @media screen and (max-width: 435px) {
+      //     width: 22px;
+      //   }
     }
     &--yt:hover {
+      position: relative;
       width: 58px;
-      transition: All 0.25s ease-in-out;
       color: white;
       background: #ff0202;
-      @media screen and (max-width: 435px) {
-        width: 22px;
+      &::before {
+        @include before;
+        @include flex;
+        content: "YouTube";
       }
+      //   @media screen and (max-width: 435px) {
+      //     width: 22px;
+      //   }
     }
     &--in:hover {
+      position: relative;
       width: 58px;
-      transition: All 0.25s ease-in-out;
       color: white;
       background: #0077b5;
-      @media screen and (max-width: 435px) {
-        width: 22px;
+      &::before {
+        @include before;
+        @include flex;
+        content: "Linkedin";
       }
+      //   @media screen and (max-width: 435px) {
+      //     width: 22px;
+      //   }
     }
   }
   &__list {
     height: 480px;
-    width: 100px;
+    width: 60px;
     margin: 0;
     padding: 0;
-    max-height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
+    // @media screen and (max-width: 435px) {
+    //     height: 260px;
+    //   }
+  }
+}
+
+@keyframes stretch {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

@@ -1,7 +1,20 @@
+/*mixin*/
 @mixin flex {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin after{
+  animation: stretch 0.25s ease-in-out;
+  position: absolute;
+  font-size: 18px;
+  right: -100px;
+  font-style: italic;
+  background: #96955d;
+  width: 100px;
+  height: 50px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .nav-language {
@@ -9,69 +22,82 @@
   justify-content: flex-end;
   align-items: center;
   margin: 0;
+  padding: 0;
   height: 480px;
-  width: 100px;
+  width: 60px;
   &__item {
     list-style: none;
   }
   &__link {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: width 0.25s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     &--en {
       @include flex;
       color: rgb(196, 85, 85);
-      text-decoration: none;
-      font-weight: bold;
       background: rgb(56, 56, 170);
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      margin: 0;
-      transition: All 0.25s ease-in-out;
-      border-bottom-left-radius: 10px;
-      border-top-left-radius: 10px;
-      @media screen and (max-width: 435px) {
-        font-weight: normal;
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-      }
+      // @media screen and (max-width: 435px) {
+      //   font-weight: normal;
+      //   width: 20px;
+      //   height: 20px;
+      //   font-size: 10px;
+      // }
       &:hover {
+        position: relative;
         width: 58px;
-        transition: All 0.25s ease-in-out;
         color: white;
         background: #395181;
-        @media screen and (max-width: 435px) {
-          width: 22px;
+        &::after {
+          @include after;
+          @include flex;
+          content: "English";
         }
+        // @media screen and (max-width: 435px) {
+        //   width: 22px;
+        // }
       }
     }
     &--pl {
       @include flex;
       color: white;
-      text-decoration: none;
-      font-weight: bold;
       background: rgb(196, 85, 85);
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      margin: 0;
-      transition: All 0.25s ease-in-out;
-      border-bottom-left-radius: 10px;
-      border-top-left-radius: 10px;
-      @media screen and (max-width: 435px) {
-        font-weight: normal;
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-      }
+      // @media screen and (max-width: 435px) {
+      //   font-weight: normal;
+      //   width: 20px;
+      //   height: 20px;
+      //   font-size: 10px;
+      // }
       &:hover {
+        position: relative;
         width: 58px;
-        transition: All 0.25s ease-in-out;
         color: rgb(0, 0, 0);
         background: rgb(207, 117, 117);
-        @media screen and (max-width: 435px) {
-          width: 22px;
+        &::after {
+          @include after;
+          @include flex;
+          content: "Polski";
         }
+        // @media screen and (max-width: 435px) {
+        //   width: 22px;
+        // }
       }
     }
+  }
+}
+
+@keyframes stretch {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
