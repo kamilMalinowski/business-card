@@ -1,4 +1,4 @@
-![cover](https://kamilmalinowski.github.io/business-card__2020/images/og-bc.png)
+![cover](https://kamilmalinowski.github.io/business-card__2020/og-bc.png)
 
 # KAMIL MALINOWSKI - MY BUSINESS CARD
 
