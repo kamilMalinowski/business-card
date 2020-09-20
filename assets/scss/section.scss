@@ -68,14 +68,15 @@
 
 /*my picture*/
 .myPicture {
+  background-image: url("../images/animation/1.png");
   animation: callMe 3s ease-in-out infinite ;
   background-size: contain;
   width: 480px;
   height: 480px;
-  //   @media screen and (max-width: 600px) {
-  //     width: 320px;
-  //     height: 320px;
-  //   }
+    @media screen and (max-width: 600px) {
+      width: 380px;
+      height: 380px;
+    }
   //   @media screen and (max-width: 435px) {
   //     width: 260px;
   //     height: 260px;
