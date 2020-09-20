@@ -68,7 +68,7 @@
 
 /*my picture*/
 .myPicture {
-  background-image: url("../images/kamil-bc2.png");
+  animation: callMe 3s ease-in-out infinite ;
   background-size: contain;
   width: 480px;
   height: 480px;
@@ -109,5 +109,74 @@
   &__special {
     color: #595cca;
     font-size: 16px;
+  }
+}
+
+@keyframes callMe {
+  0% {
+    background-image: url("../images/animation/1.png");
+  }
+  5% {
+    background-image: url("../images/animation/2.png");
+  }
+  10% {
+    background-image: url("../images/animation/3.png");
+  }
+  15% {
+    background-image: url("../images/animation/4.png");
+  }
+  20% {
+    background-image: url("../images/animation/5.png");
+  }
+  25% {
+    background-image: url("../images/animation/6.png");
+  }
+  30% {
+    background-image: url("../images/animation/7.png");
+  }
+  35% {
+    background-image: url("../images/animation/8.png");
+  }
+  40% {
+    background-image: url("../images/animation/9.png");
+  }
+  45% {
+    background-image: url("../images/animation/10.png");
+  }
+  50% {
+    background-image: url("../images/animation/11.png");
+  }
+  55% {
+    background-image: url("../images/animation/12.png");
+  }
+  60% {
+    background-image: url("../images/animation/13.png");
+  }
+  65% {
+    background-image: url("../images/animation/14.png");
+  }
+  70% {
+    background-image: url("../images/animation/15.png");
+  }
+  75% {
+    background-image: url("../images/animation/16.png");
+  }
+  80% {
+    background-image: url("../images/animation/17.png");
+  }
+  85% {
+    background-image: url("../images/animation/18.png");
+  }
+  90% {
+    background-image: url("../images/animation/19.png");
+  }
+  91% {
+    background-image: url("../images/animation/20.png");
+  }
+  100% {
+    background-image: url("../images/animation/21.png");
+  }
+  110% {
+    background-image: url("../images/animation/21.png");
   }
 }
