@@ -11,10 +11,8 @@
   height: 680px;
   flex-direction: column;
   text-align: center;
-  box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75);
   text-shadow: -2px -2px 2px rgba(10, 9, 9, 0.288),
     1px 1px 1px rgba(0, 0, 0, 0.5);
-  //   text-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75);
   //   @media screen and (max-width: 600px) {
   //     width: 320px;
   //   }
@@ -68,22 +66,64 @@
 
 /*my picture*/
 .myPicture {
-  background-image: url("../images/animation/1.png");
-  animation: callMe 3s ease-in-out infinite ;
+  @include flex;
+  flex-direction: column;
+  background-image: url("../images/zero.png");
   background-size: contain;
   width: 480px;
   height: 480px;
-    @media screen and (max-width: 600px) {
-      width: 380px;
-      height: 380px;
+  @media screen and (max-width: 600px) {
+    width: 380px;
+    height: 380px;
+  }
+  &__animation {
+    position: relative;
+    border: 4px solid #96955d;
+    border-radius: 100%;
+    margin: 16px;
+    padding: 0;
+    width: 129px;
+    height: 129px;
+    &:hover {
+      border: 4px solid #c5c491;
     }
+  }
+  &__link {
+    @include flex;
+    width: 50px;
+    height: 50px;
+    background: #96955d;
+    border-radius: 10px;
+    transition: width 0.25s ease-in-out;
+    &:hover {
+      background: #c5c491;
+      width: 60px;
+    }
+  }
+  &__image {
+    animation: vibe 0.5s ease-in-out infinite alternate;
+    width: 30px;
+    height: 30px;
+  }
   //   @media screen and (max-width: 435px) {
-  //     width: 260px;
+  //     width: 260px;80
   //     height: 260px;
   //   }
 }
 
-/*about-me*/
+@keyframes vibe {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/*footer*/
 .footer {
   background: #272727;
   height: 100px;
@@ -110,74 +150,5 @@
   &__special {
     color: #595cca;
     font-size: 16px;
-  }
-}
-
-@keyframes callMe {
-  0% {
-    background-image: url("../images/animation/1.png");
-  }
-  5% {
-    background-image: url("../images/animation/2.png");
-  }
-  10% {
-    background-image: url("../images/animation/3.png");
-  }
-  15% {
-    background-image: url("../images/animation/4.png");
-  }
-  20% {
-    background-image: url("../images/animation/5.png");
-  }
-  25% {
-    background-image: url("../images/animation/6.png");
-  }
-  30% {
-    background-image: url("../images/animation/7.png");
-  }
-  35% {
-    background-image: url("../images/animation/8.png");
-  }
-  40% {
-    background-image: url("../images/animation/9.png");
-  }
-  45% {
-    background-image: url("../images/animation/10.png");
-  }
-  50% {
-    background-image: url("../images/animation/11.png");
-  }
-  55% {
-    background-image: url("../images/animation/12.png");
-  }
-  60% {
-    background-image: url("../images/animation/13.png");
-  }
-  65% {
-    background-image: url("../images/animation/14.png");
-  }
-  70% {
-    background-image: url("../images/animation/15.png");
-  }
-  75% {
-    background-image: url("../images/animation/16.png");
-  }
-  80% {
-    background-image: url("../images/animation/17.png");
-  }
-  85% {
-    background-image: url("../images/animation/18.png");
-  }
-  90% {
-    background-image: url("../images/animation/19.png");
-  }
-  91% {
-    background-image: url("../images/animation/20.png");
-  }
-  100% {
-    background-image: url("../images/animation/21.png");
-  }
-  110% {
-    background-image: url("../images/animation/21.png");
   }
 }
