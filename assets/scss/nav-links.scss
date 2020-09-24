@@ -20,9 +20,6 @@
 .nav-links {
   margin: 0;
   padding: 0;
-  //   @media screen and (max-width: 435px) {
-  //     height: 260px;
-  //   }
   &__item {
     list-style: none;
   }
@@ -41,12 +38,12 @@
     transition: width 0.25s ease-in-out;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    // @media screen and (max-width: 435px) {
-    //   font-weight: normal;
-    //   width: 30px;
-    //   height: 30px;
-    //   font-size: 10px;
-    // }
+    @media screen and (max-width: 495px) {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
     &--gh:hover {
       position: relative;
       width: 58px;
@@ -56,10 +53,10 @@
         @include before;
         @include flex;
         content: "GitHub";
+        @media screen and (max-width: 495px) {
+          content: none;
+        }
       }
-      //   @media screen and (max-width: 435px) {
-      //     width: 22px;
-      //   }
     }
     &--be:hover {
       position: relative;
@@ -70,10 +67,10 @@
         @include before;
         @include flex;
         content: "Behance";
+        @media screen and (max-width: 495px) {
+          content: none;
+        }
       }
-      //   @media screen and (max-width: 435px) {
-      //     width: 22px;
-      //   }
     }
     &--fb:hover {
       position: relative;
@@ -84,10 +81,10 @@
         @include before;
         @include flex;
         content: "Facebook";
+        @media screen and (max-width: 495px) {
+          content: none;
+        }
       }
-      //   @media screen and (max-width: 435px) {
-      //     width: 22px;
-      //   }
     }
     &--yt:hover {
       position: relative;
@@ -98,10 +95,10 @@
         @include before;
         @include flex;
         content: "YouTube";
+        @media screen and (max-width: 495px) {
+          content: none;
+        }
       }
-      //   @media screen and (max-width: 435px) {
-      //     width: 22px;
-      //   }
     }
     &--in:hover {
       position: relative;
@@ -112,10 +109,10 @@
         @include before;
         @include flex;
         content: "Linkedin";
+        @media screen and (max-width: 495px) {
+          content: none;
+        }
       }
-      //   @media screen and (max-width: 435px) {
-      //     width: 22px;
-      //   }
     }
   }
   &__list {
@@ -127,9 +124,12 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    // @media screen and (max-width: 600px) {
- 
-    //   }
+    @media screen and (max-width: 600px) {
+      height: 380px;
+    }
+    @media screen and (max-width: 495px) {
+      height: 300px;
+    }
   }
 }
 
@@ -137,7 +137,6 @@
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 }
-@mixin after{
+@mixin after {
   animation: stretch 0.25s ease-in-out;
   position: absolute;
   font-size: 18px;
@@ -18,6 +18,7 @@
 }
 
 .nav-language {
+  z-index: 9999;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -39,16 +40,16 @@
     transition: width 0.25s ease-in-out;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    @media screen and (max-width: 495px) {
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
     &--en {
       @include flex;
       color: rgb(196, 85, 85);
       background: rgb(56, 56, 170);
-      // @media screen and (max-width: 435px) {
-      //   font-weight: normal;
-      //   width: 20px;
-      //   height: 20px;
-      //   font-size: 10px;
-      // }
       &:hover {
         position: relative;
         width: 58px;
@@ -58,22 +59,16 @@
           @include after;
           @include flex;
           content: "English";
+          @media screen and (max-width: 495px) {
+            content: none;
+          }
         }
-        // @media screen and (max-width: 435px) {
-        //   width: 22px;
-        // }
       }
     }
     &--pl {
       @include flex;
       color: white;
       background: rgb(196, 85, 85);
-      // @media screen and (max-width: 435px) {
-      //   font-weight: normal;
-      //   width: 20px;
-      //   height: 20px;
-      //   font-size: 10px;
-      // }
       &:hover {
         position: relative;
         width: 58px;
@@ -83,10 +78,10 @@
           @include after;
           @include flex;
           content: "Polski";
+          @media screen and (max-width: 495px) {
+            content: none;
+          }
         }
-        // @media screen and (max-width: 435px) {
-        //   width: 22px;
-        // }
       }
     }
   }

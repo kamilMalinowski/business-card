@@ -1,5 +1,6 @@
 /*mixin*/
 .nav-language {
+  z-index: 9999;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -20,6 +21,12 @@
     transition: width 0.25s ease-in-out;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px; }
+    @media screen and (max-width: 495px) {
+      .nav-language__link {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0; } }
     .nav-language__link--en {
       display: flex;
       align-items: center;
@@ -46,6 +53,9 @@
           align-items: center;
           justify-content: center;
           content: "English"; }
+          @media screen and (max-width: 495px) {
+            .nav-language__link--en:hover::after {
+              content: none; } }
     .nav-language__link--pl {
       display: flex;
       align-items: center;
@@ -72,6 +82,9 @@
           align-items: center;
           justify-content: center;
           content: "Polski"; }
+          @media screen and (max-width: 495px) {
+            .nav-language__link--pl:hover::after {
+              content: none; } }
 
 @keyframes stretch {
   0% {
@@ -103,6 +116,12 @@
     transition: width 0.25s ease-in-out;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; }
+    @media screen and (max-width: 495px) {
+      .nav-links__link {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0; } }
     .nav-links__link--gh:hover {
       position: relative;
       width: 58px;
@@ -123,6 +142,9 @@
         align-items: center;
         justify-content: center;
         content: "GitHub"; }
+        @media screen and (max-width: 495px) {
+          .nav-links__link--gh:hover::before {
+            content: none; } }
     .nav-links__link--be:hover {
       position: relative;
       width: 58px;
@@ -143,6 +165,9 @@
         align-items: center;
         justify-content: center;
         content: "Behance"; }
+        @media screen and (max-width: 495px) {
+          .nav-links__link--be:hover::before {
+            content: none; } }
     .nav-links__link--fb:hover {
       position: relative;
       width: 58px;
@@ -163,6 +188,9 @@
         align-items: center;
         justify-content: center;
         content: "Facebook"; }
+        @media screen and (max-width: 495px) {
+          .nav-links__link--fb:hover::before {
+            content: none; } }
     .nav-links__link--yt:hover {
       position: relative;
       width: 58px;
@@ -183,6 +211,9 @@
         align-items: center;
         justify-content: center;
         content: "YouTube"; }
+        @media screen and (max-width: 495px) {
+          .nav-links__link--yt:hover::before {
+            content: none; } }
     .nav-links__link--in:hover {
       position: relative;
       width: 58px;
@@ -203,6 +234,9 @@
         align-items: center;
         justify-content: center;
         content: "Linkedin"; }
+        @media screen and (max-width: 495px) {
+          .nav-links__link--in:hover::before {
+            content: none; } }
   .nav-links__list {
     height: 480px;
     width: 60px;
@@ -212,6 +246,12 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column; }
+    @media screen and (max-width: 600px) {
+      .nav-links__list {
+        height: 380px; } }
+    @media screen and (max-width: 495px) {
+      .nav-links__list {
+        height: 300px; } }
 
 @keyframes stretch {
   0% {
@@ -229,6 +269,12 @@
   flex-direction: column;
   text-align: center;
   text-shadow: -2px -2px 2px rgba(10, 9, 9, 0.288), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 600px) {
+    .section {
+      width: 380px; } }
+  @media screen and (max-width: 495px) {
+    .section {
+      width: 224px; } }
 
 /*my header*/
 .header {
@@ -238,6 +284,9 @@
   border-bottom: 4px solid #96955d;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; }
+  @media screen and (max-width: 600px) {
+    .header {
+      width: 380px; } }
   .header__title {
     color: #96955d;
     margin: 0;
@@ -307,6 +356,10 @@
   border-top: 4px solid #96955d;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px; }
+  @media screen and (max-width: 600px) {
+    .footer {
+      font-size: 14px;
+      width: 380px; } }
   .footer__paragraph {
     margin: 0;
     color: #96955d;
