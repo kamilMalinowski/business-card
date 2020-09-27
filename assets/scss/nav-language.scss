@@ -46,6 +46,10 @@
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
     }
+    @media screen and (max-width: 400px) {
+      width: 32px;
+      height: 32px;
+    }
     &--en {
       @include flex;
       color: rgb(196, 85, 85);
@@ -55,6 +59,12 @@
         width: 58px;
         color: white;
         background: #395181;
+        @media screen and (max-width: 495px) {
+          width: 50px;
+        }
+        @media screen and (max-width: 400px) {
+          width: 32px;
+        }
         &::after {
           @include after;
           @include flex;
@@ -74,6 +84,12 @@
         width: 58px;
         color: rgb(0, 0, 0);
         background: rgb(207, 117, 117);
+        @media screen and (max-width: 495px) {
+          width: 50px;
+        }
+        @media screen and (max-width: 400px) {
+          width: 32px;
+        }
         &::after {
           @include after;
           @include flex;
